@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <link rel="preload" as="image" href="hero-premium-desktop.jpg" fetchpriority="high" type="image/jpeg">
-  <link rel="preload" as="image" href="hero-mariana-mobile-poster.jpg" fetchpriority="high" media="(max-width: 768px)" type="image/jpeg">
+  <link rel="preload" as="image" href="hero-premium-desktop.webp" fetchpriority="high" type="image/webp">
+  <link rel="preload" as="image" href="hero-mariana-mobile-poster.webp" fetchpriority="high" media="(max-width: 768px)" type="image/webp">
   
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,10 +60,6 @@
   .section-head{text-align:center;margin-bottom:64px;}
   .section-head h2{font-size:clamp(30px,4vw,44px);color:var(--text-dark);margin-top:12px;}
   .section-head.on-dark h2{color:var(--cream);}
-
-  /* signature scale-line motif */
-  .scale-mark{width:34px;height:20px;margin:0 auto;opacity:0.9;}
-  .scale-mark svg{width:100%;height:100%;display:block;}
 
   /* ===== NAV ===== */
   header{
@@ -131,24 +127,24 @@
     will-change: transform;
     transform: translateZ(0);
     position:absolute;inset:0;
-    background-image: url('hero-premium-desktop.jpg');
+    background-image: url('hero-premium-desktop.webp');
     background-size:cover;background-position:left center; background-repeat: no-repeat;
   }
 @media (max-width: 768px) {
-	    .hero-bg {
-	      background-image: url('hero-mariana-mobile-poster.jpg');
-	      background-position: center top;
-	    }
-	    .hero-bg::after {
-	      background: linear-gradient(0deg, rgba(15,11,6,0.98) 0%, rgba(15,11,6,0.8) 30%, rgba(15,11,6,0.3) 60%, rgba(15,11,6,0) 100%) !important;
-	    }
-	    .hero-inner {
-	      padding: 80px 20px 40px;
-	      align-items: center;
-	      justify-content: flex-end;
-	      text-align: center;
-	      min-height: 100vh;
-	    }
+		    .hero-bg {
+		      background-image: url('hero-mariana-mobile-poster.webp');
+		      background-position: center top;
+		    }
+		    .hero-bg::after {
+		      background: linear-gradient(0deg, rgba(15,11,6,0.98) 0%, rgba(15,11,6,0.8) 30%, rgba(15,11,6,0.3) 60%, rgba(15,11,6,0) 100%) !important;
+		    }
+		    .hero-inner {
+		      padding: 80px 20px 40px;
+		      align-items: center;
+		      justify-content: flex-end;
+		      text-align: center;
+		      min-height: 100vh;
+		    }
     .hero-inner .eyebrow, .hero h1, .hero p {
       width: 100%;
       margin-left: auto;
@@ -174,7 +170,7 @@
       display: none;
     }
     #about-photo {
-      content: url('about-mariana.jpg');
+      content: url('about-mariana.webp');
     }
   }
 
@@ -537,8 +533,8 @@
   <div class="about-grid">
     <div class="about-img reveal">
       <picture>
-        <source srcset="about-mariana.jpg" type="image/jpeg">
-        <img src="about-mariana.jpg" alt="Dra. Mariana Souza no escritório" loading="lazy" decoding="async" id="about-photo">
+        <source srcset="about-mariana.webp" type="image/webp">
+        <img src="about-mariana.webp" alt="Dra. Mariana Souza no escritório" loading="lazy" decoding="async" id="about-photo">
       </picture>
     </div>
     <div class="about-copy reveal">
@@ -550,7 +546,7 @@
       <a href="#contato" class="btn-outline">Conhecer Mais</a>
       <div class="about-sign">
         <span class="sig-name">Mariana Souza</span>
-        <span class="sig-role">OAB &mdash; Direito Imobiliário</span>
+        <span class="sig-role">OAB — Direito Imobiliário</span>
       </div>
     </div>
   </div>
@@ -597,28 +593,39 @@
     </div>
     <div class="testi-grid">
       <div class="testi-card reveal">
-        <div class="testi-quote-mark">&ldquo;</div>
+        <div class="testi-quote-mark">"</div>
         <p>Profissional excepcional. Conduziu todo o processo com excelência e muita atenção aos detalhes.</p>
         <div class="testi-name">Mariana F.</div>
       </div>
       <div class="testi-card reveal">
-        <div class="testi-quote-mark">&ldquo;</div>
+        <div class="testi-quote-mark">"</div>
         <p>Segurança, agilidade e um atendimento humanizado. Recomendo de olhos fechados.</p>
         <div class="testi-name">Carlos A.</div>
       </div>
       <div class="testi-card reveal">
-        <div class="testi-quote-mark">&ldquo;</div>
+        <div class="testi-quote-mark">"</div>
         <p>Extremamente competente e estratégica. Superou todas as minhas expectativas.</p>
         <div class="testi-name">Juliana R.</div>
       </div>
     </div>
     <div class="testi-portrait reveal">
       <picture>
-        <source srcset="mariana-testi.jpg" type="image/jpeg">
-        <img src="mariana-testi.jpg" alt="Dra. Mariana Souza" loading="lazy" decoding="async">
+        <source srcset="mariana-testi.webp" type="image/webp">
+        <img src="mariana-testi.webp" alt="Dra. Mariana Souza" loading="lazy" decoding="async">
       </picture>
     </div>
   </div>
+</section>
+
+<section class="testi-portrait reveal" style="display:none;">
+  <picture>
+    <source srcset="mariana-contact.webp" type="image/webp">
+    <img src="mariana-contact.webp" alt="Contato" loading="lazy">
+  </picture>
+  <picture>
+    <source srcset="office-mariana.webp" type="image/webp">
+    <img src="office-mariana.webp" alt="Escritório" loading="lazy">
+  </picture>
 </section>
 
 <section class="cta" id="contato">
@@ -631,8 +638,8 @@
     </div>
 <div class="cta-img reveal">
       <picture>
-        <source srcset="mariana-contact.jpg" type="image/jpeg">
-        <img src="mariana-contact.jpg" alt="Dra. Mariana Souza" loading="lazy" decoding="async">
+        <source srcset="mariana-contact.webp" type="image/webp">
+        <img src="mariana-contact.webp" alt="Dra. Mariana Souza" loading="lazy" decoding="async">
       </picture>
     </div>
   </div>
@@ -661,12 +668,12 @@
         <h4>Contato</h4>
         <a href="tel:5511998877766">11 99887-7766</a>
         <a href="mailto:contato@marianasouza.adv.br">contato@marianasouza.adv.br</a>
-        <p>São Paulo, SP &mdash; Brasil</p>
+        <p>São Paulo, SP — Brasil</p>
       </div>
       <div class="foot-col">
         <h4>Atendimento</h4>
         <p>Segunda a Sexta</p>
-        <p>09h &agrave;s 18h</p>
+        <p>09h às 18h</p>
       </div>
     </div>
     <div class="foot-bottom">
